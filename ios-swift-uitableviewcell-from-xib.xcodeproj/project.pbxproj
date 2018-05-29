@@ -12,6 +12,9 @@
 		B4371F4420BD7BE7002F6080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4371F4220BD7BE7002F6080 /* Main.storyboard */; };
 		B4371F4620BD7BE9002F6080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4371F4520BD7BE9002F6080 /* Assets.xcassets */; };
 		B4371F4920BD7BE9002F6080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4371F4720BD7BE9002F6080 /* LaunchScreen.storyboard */; };
+		B4371F5B20BD9F27002F6080 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371F5920BD9F27002F6080 /* ProductTableViewCell.swift */; };
+		B4371F5C20BD9F27002F6080 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4371F5A20BD9F27002F6080 /* ProductTableViewCell.xib */; };
+		B4371F5F20BDA039002F6080 /* ProductDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4371F5E20BDA039002F6080 /* ProductDto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B4371F4520BD7BE9002F6080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4371F4820BD7BE9002F6080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4371F4A20BD7BE9002F6080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4371F5920BD9F27002F6080 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		B4371F5A20BD9F27002F6080 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		B4371F5E20BDA039002F6080 /* ProductDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		B4371F3D20BD7BE7002F6080 /* ios-swift-uitableviewcell-from-xib */ = {
 			isa = PBXGroup;
 			children = (
+				B4371F5D20BDA026002F6080 /* Models */,
+				B4371F5820BD9F07002F6080 /* Cells */,
 				B4371F3E20BD7BE7002F6080 /* AppDelegate.swift */,
 				B4371F4020BD7BE7002F6080 /* ViewController.swift */,
 				B4371F4220BD7BE7002F6080 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				B4371F4A20BD7BE9002F6080 /* Info.plist */,
 			);
 			path = "ios-swift-uitableviewcell-from-xib";
+			sourceTree = "<group>";
+		};
+		B4371F5820BD9F07002F6080 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B4371F5920BD9F27002F6080 /* ProductTableViewCell.swift */,
+				B4371F5A20BD9F27002F6080 /* ProductTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B4371F5D20BDA026002F6080 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4371F5E20BDA039002F6080 /* ProductDto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4371F4920BD7BE9002F6080 /* LaunchScreen.storyboard in Resources */,
+				B4371F5C20BD9F27002F6080 /* ProductTableViewCell.xib in Resources */,
 				B4371F4620BD7BE9002F6080 /* Assets.xcassets in Resources */,
 				B4371F4420BD7BE7002F6080 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +163,8 @@
 			files = (
 				B4371F4120BD7BE7002F6080 /* ViewController.swift in Sources */,
 				B4371F3F20BD7BE7002F6080 /* AppDelegate.swift in Sources */,
+				B4371F5B20BD9F27002F6080 /* ProductTableViewCell.swift in Sources */,
+				B4371F5F20BDA039002F6080 /* ProductDto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +308,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P8R296BAPM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-swift-uitableviewcell-from-xib/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,6 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vncode247.ios-swift-uitableviewcell-from-xib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +327,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P8R296BAPM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-swift-uitableviewcell-from-xib/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vncode247.ios-swift-uitableviewcell-from-xib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
